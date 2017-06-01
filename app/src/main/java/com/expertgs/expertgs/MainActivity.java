@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.expertgs.expertgs.Activities.Categories;
 import com.expertgs.expertgs.Activities.Test;
 
 import mehdi.sakout.fancybuttons.FancyButton;
@@ -32,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         launchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Test.class));
+                startActivity(new Intent(MainActivity.this, Categories.class));
                 finish();
             }
         });
