@@ -1,10 +1,12 @@
 package com.expertgs.expertgs.Activities;
 
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.ToxicBakery.viewpager.transforms.RotateUpTransformer;
 import com.expertgs.expertgs.Adapters.ViewPagerAdapter;
 import com.expertgs.expertgs.Fragments.FragmentOne;
 import com.expertgs.expertgs.Fragments.FragmentThree;
@@ -41,5 +43,6 @@ public class About extends AppCompatActivity {
         adapter.addFragment(new FragmentTwo(), "TWO");
         adapter.addFragment(new FragmentThree(), "THREE");
         viewPager.setAdapter(adapter);
+        viewPager.setPageTransformer(true, new RotateUpTransformer());
     }
 }
