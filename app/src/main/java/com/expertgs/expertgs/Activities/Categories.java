@@ -29,7 +29,7 @@ public class Categories extends AppCompatActivity {
         aboutView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Categories.this, Test.class));
+                startActivity(new Intent(Categories.this, About.class));
             }
         });
 
