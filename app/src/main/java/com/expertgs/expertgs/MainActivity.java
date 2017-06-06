@@ -5,6 +5,7 @@ import android.graphics.drawable.AnimationDrawable;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.view.View;
 
 import com.expertgs.expertgs.Activities.Categories;
@@ -37,5 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+
     }
+
 }
